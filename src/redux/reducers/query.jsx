@@ -7,7 +7,7 @@ const INITIAL = {
 export default function query(state = INITIAL, action) {
   switch (action.type) {
     case ADD_QUERY:
-      return { query: action.query };
+      return { query: action.query, entitie: action.entitie };
     default:
       return state;
   }
