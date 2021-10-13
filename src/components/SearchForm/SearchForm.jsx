@@ -28,21 +28,23 @@ function SearchForm() {
         id="search-input"
         onChange={handleChangeText}
       />
-      <label htmlFor="album-radio">
-        <input
-          type="radio"
-          name="typeRadio"
-          id="album-radio"
-          value="album"
-          onChange={handleChangeRadio}
-        />
-      </label>
       <label htmlFor="artist-radio">
+        Artist
         <input
           type="radio"
           name="typeRadio"
           id="artist-radio"
           value="artist"
+          onChange={handleChangeRadio}
+        />
+      </label>
+      <label htmlFor="album-radio">
+        Album
+        <input
+          type="radio"
+          name="typeRadio"
+          id="album-radio"
+          value="album"
           onChange={handleChangeRadio}
         />
       </label>

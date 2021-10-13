@@ -4,7 +4,7 @@ const INITIAL = {
   query: '',
 };
 
-export default function artist(state = INITIAL, action) {
+export default function query(state = INITIAL, action) {
   switch (action.type) {
     case ADD_QUERY:
       return { query: action.query };
