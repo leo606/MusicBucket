@@ -1,6 +1,7 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-// const ROOT_URL = "https://musicbrainz.org/ws/2/artist/";
+import { SearchForm } from './components';
 import { addArtist } from './redux/actions';
 
 // 5b11f4ce-a62d-471e-81fc-a69a8278c7da
@@ -15,10 +16,8 @@ function App() {
 
   return (
     <>
-      <h1>MF</h1>
-      <h2>m</h2>
-      <input type="text" name="artistId" onChange={({ target }) => setArtistId(target.value)} />
-      <input type="button" value="SET" onClick={addArtistId} />
+      <h1>App_</h1>
+      <SearchForm />
     </>
   );
 }
