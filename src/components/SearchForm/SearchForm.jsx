@@ -3,8 +3,8 @@ import { useDispatch } from 'react-redux';
 import { addQuery } from '../../redux/actions';
 
 function SearchForm() {
-  const [queryIn, setQueryIn] = useState();
-  const [entitieIn, setEntitieIn] = useState();
+  const [queryIn, setQueryIn] = useState('');
+  const [entitieIn, setEntitieIn] = useState('artist');
   const dispatch = useDispatch();
 
   function handleChangeText({ target }) {
