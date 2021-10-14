@@ -9,16 +9,17 @@ function SearchList() {
 
   useEffect(() => {
     const queryText = query.text.split(' ').join('%20');
-    console.log(data);
     dispatch(fetchSearch(queryText, query.entitie));
   }, [query]);
 
   return (
     <>
       <h1>Search_List</h1>
-      <ol>
-        {data.artists.map((art) => <li key={art.id}>{art.name}</li>)}
-      </ol>
+      {data.artists && (
+        <ol>
+          {data.artists.map((art) => <li key={art.id}>{art.name}</li>)}
+        </ol>
+      )}
     </>
   );
 }

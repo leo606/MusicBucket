@@ -15,6 +15,6 @@ export const fetchSearch = (query, entitie) => async (dispatch) => {
     const resp = await fetchSearchAPI(query, entitie);
     return dispatch(addData(resp));
   } catch (e) {
-    return console.log(e);
+    return e;
   }
 };

@@ -44,7 +44,7 @@ function SearchForm() {
           type="radio"
           name="typeRadio"
           id="album-radio"
-          value="album"
+          value="release-group"
           onChange={handleChangeRadio}
         />
       </label>

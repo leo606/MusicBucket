@@ -1,7 +1,7 @@
 import { ADD_DATA } from '../actions';
 
 const INITIAL = {
-  data: [],
+  data: {},
 };
 
 export default function data(state = INITIAL, action) {
