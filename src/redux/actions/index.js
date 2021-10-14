@@ -1,5 +1,3 @@
-/* eslint-disable arrow-body-style */
-/* eslint-disable no-undef */
 import fetchSearchAPI from '../../services/musicBrainz';
 
 export const ADD_ARTIST = 'ADD_ARTIST';
@@ -15,17 +13,8 @@ export const addData = (data) => ({ type: ADD_DATA, data });
 export const fetchSearch = (query, entitie) => async (dispatch) => {
   try {
     const resp = await fetchSearchAPI(query, entitie);
-    console.log(resp);
     return dispatch(addData(resp));
   } catch (e) {
     return console.log(e);
   }
 };
-
-// export function fff() {
-//   console.log('fora');
-//   return async (dispatch) => {
-//     console.log('async dentro');
-//     dispatch(addData([9, 9, 9, 9, 9, 9]));
-//   };
-// }
