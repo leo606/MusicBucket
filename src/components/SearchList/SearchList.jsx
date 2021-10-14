@@ -15,11 +15,22 @@ function SearchList() {
   return (
     <>
       <h1>Search_List</h1>
-      {data.artists && (
+      {
+        data.count && (
+          <ol>
+            {data.artists ? (
+              data.artists.map((art) => <li key={art.id}>{art.name}</li>)
+            ) : (
+              data['release-groups'].map((rel) => <li key={rel.id}>{rel.title}</li>)
+            )}
+          </ol>
+        )
+      }
+      {/* {data.artists && (
         <ol>
           {data.artists.map((art) => <li key={art.id}>{art.name}</li>)}
         </ol>
-      )}
+      )} */}
     </>
   );
 }
