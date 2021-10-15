@@ -7,7 +7,7 @@ const INITIAL = {
 export default function artist(state = INITIAL, action) {
   switch (action.type) {
     case ADD_ARTIST:
-      return { id: action.id };
+      return { ...state, id: action.id };
     default:
       return state;
   }
