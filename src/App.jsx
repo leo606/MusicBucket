@@ -4,7 +4,7 @@ import { SearchForm, SearchList } from './components';
 import { fetchSearch } from './redux/actions';
 
 function App() {
-  const query = useSelector((store) => store.query);
+  const query = useSelector((store) => store.searchQuery);
   const dispatch = useDispatch();
 
   useEffect(() => {

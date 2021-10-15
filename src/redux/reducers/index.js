@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
 // import artist from './artist';
-import query from './query';
-import data from './data';
+import searchQuery from './searchQuery';
+import searchData from './searchData';
 
-const rootReducer = combineReducers({ query, data });
+const rootReducer = combineReducers({ searchQuery, searchData });
 
 export default rootReducer;

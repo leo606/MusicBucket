@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addQuery, cleanData } from '../../redux/actions';
+import { addSearchQuery, cleanSearchData, loadingSearchData } from '../../redux/actions';
 
 function SearchForm() {
   const [queryIn, setQueryIn] = useState('');
@@ -16,8 +16,9 @@ function SearchForm() {
   }
 
   function handleClickSearch() {
-    if (!queryIn) dispatch(cleanData());
-    dispatch(addQuery(queryIn, entitieIn));
+    if (!queryIn) dispatch(cleanSearchData());
+    dispatch(loadingSearchData(true));
+    dispatch(addSearchQuery(queryIn, entitieIn));
   }
 
   return (

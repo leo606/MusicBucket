@@ -5,7 +5,7 @@ const INITIAL = {
   entitie: undefined,
 };
 
-export default function query(state = INITIAL, action) {
+export default function searchQuery(state = INITIAL, action) {
   switch (action.type) {
     case ADD_QUERY:
       return { ...state, text: action.text, entitie: action.entitie };
