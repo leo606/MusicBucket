@@ -8,7 +8,7 @@ const INITIAL = {
 export default function query(state = INITIAL, action) {
   switch (action.type) {
     case ADD_QUERY:
-      return { text: action.text, entitie: action.entitie };
+      return { ...state, text: action.text, entitie: action.entitie };
     default:
       return state;
   }

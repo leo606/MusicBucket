@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addQuery } from '../../redux/actions';
+import { addQuery, cleanData } from '../../redux/actions';
 
 function SearchForm() {
   const [queryIn, setQueryIn] = useState('');
@@ -16,6 +16,7 @@ function SearchForm() {
   }
 
   function handleClickSearch() {
+    if (!queryIn) dispatch(cleanData());
     dispatch(addQuery(queryIn, entitieIn));
   }
 
@@ -32,7 +33,7 @@ function SearchForm() {
         Artist
         <input
           type="radio"
-          name="typeRadio"
+          name="entitieRadio"
           id="artist-radio"
           value="artist"
           onChange={handleChangeRadio}
@@ -42,7 +43,7 @@ function SearchForm() {
         Album
         <input
           type="radio"
-          name="typeRadio"
+          name="entitieRadio"
           id="album-radio"
           value="release-group"
           onChange={handleChangeRadio}
