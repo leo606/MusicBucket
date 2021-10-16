@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addSearchQuery, cleanSearchData, loadingSearchData } from '../../redux/actions';
 
-function SearchForm() {
+export default function SearchForm() {
   const [queryIn, setQueryIn] = useState('');
   const [entitieIn, setEntitieIn] = useState('artist');
   const dispatch = useDispatch();
@@ -54,5 +54,3 @@ function SearchForm() {
     </form>
   );
 }
-
-export default SearchForm;

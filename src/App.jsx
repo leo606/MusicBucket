@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { SearchForm, SearchList } from './components';
 import { fetchSearch } from './redux/actions';
 
-function App() {
+export default function App() {
   const query = useSelector((store) => store.searchQuery);
   const dispatch = useDispatch();
 
@@ -22,5 +22,3 @@ function App() {
     </>
   );
 }
-
-export default App;

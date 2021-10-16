@@ -1,7 +1,9 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import ArtistCard from '../ArtistCard/ArtistCard';
+import ReleaseCard from '../ReleaseCard/ReleaseCard';
 
-function SearchList() {
+export default function SearchList() {
   const searchData = useSelector((store) => store.searchData);
 
   if (searchData.isLoading) {
@@ -10,14 +12,13 @@ function SearchList() {
 
   return (
     <>
-      <h1>Search_List</h1>
       {
         searchData.data.count && (
           <ol>
             {searchData.data.artists ? (
-              searchData.data.artists.map((art) => <li key={art.id}>{art.name}</li>)
+              searchData.data.artists.map((art) => <ArtistCard key={art.id} artist={art} />)
             ) : (
-              searchData.data['release-groups'].map((rel) => <li key={rel.id}>{rel.title}</li>)
+              searchData.data['release-groups'].map((rel) => <ReleaseCard key={rel.id} release={rel} />)
             )}
           </ol>
         )
@@ -25,5 +26,3 @@ function SearchList() {
     </>
   );
 }
-
-export default SearchList;
