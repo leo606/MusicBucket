@@ -5,10 +5,13 @@ export const ADD_QUERY = 'ADD_QUERY';
 export const ADD_DATA = 'ADD_DATA';
 export const CLEAN_DATA = 'CLEAN_DATA';
 export const LOAD = 'LOAD';
+export const TOGGLE_THEME = 'TOGGLE_THEME';
 
 export const addArtist = (artistID) => ({ type: ADD_ARTIST, id: artistID });
 
 export const addSearchQuery = (text, entitie) => ({ type: ADD_QUERY, text, entitie });
+
+export const toggleTheme = (theme) => ({ type: TOGGLE_THEME, theme });
 
 export const addSearchData = (data) => ({ type: ADD_DATA, data });
 export const cleanSearchData = () => ({ type: CLEAN_DATA });

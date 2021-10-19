@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { SearchForm, SearchList } from '../../components';
-import { fetchSearch } from '../../redux/actions';
+import { fetchSearch, toggleTheme } from '../../redux/actions';
 import StyledMain from './Main.styled';
 
 export default function Main() {
@@ -19,6 +19,7 @@ export default function Main() {
     <StyledMain>
       <h1>Main</h1>
       <SearchForm />
+      <input type="button" value="click" onClick={() => dispatch(toggleTheme('light'))} />
       {query.text && <SearchList />}
     </StyledMain>
   );
