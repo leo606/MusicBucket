@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addSearchQuery, cleanSearchData, loadingSearchData } from '../../redux/actions';
+import StyledSearchForm from './SearchForm.styled';
 
 export default function SearchForm() {
   const [queryIn, setQueryIn] = useState('');
@@ -22,7 +23,7 @@ export default function SearchForm() {
   }
 
   return (
-    <form action="">
+    <StyledSearchForm>
       <input
         type="text"
         name="queryIn"
@@ -30,27 +31,29 @@ export default function SearchForm() {
         id="search-input"
         onChange={handleChangeText}
       />
-      <label htmlFor="artist-radio">
-        Artist
-        <input
-          type="radio"
-          name="entitieRadio"
-          id="artist-radio"
-          value="artist"
-          onChange={handleChangeRadio}
-        />
-      </label>
-      <label htmlFor="album-radio">
-        Album
-        <input
-          type="radio"
-          name="entitieRadio"
-          id="album-radio"
-          value="release-group"
-          onChange={handleChangeRadio}
-        />
-      </label>
+      <div>
+        <label htmlFor="artist-radio">
+          <input
+            type="radio"
+            name="entitieRadio"
+            id="artist-radio"
+            value="artist"
+            onChange={handleChangeRadio}
+          />
+          Artist
+        </label>
+        <label htmlFor="album-radio">
+          <input
+            type="radio"
+            name="entitieRadio"
+            id="album-radio"
+            value="release-group"
+            onChange={handleChangeRadio}
+          />
+          Album
+        </label>
+      </div>
       <input type="button" value="Search" onClick={handleClickSearch} />
-    </form>
+    </StyledSearchForm>
   );
 }
