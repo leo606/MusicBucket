@@ -11,7 +11,7 @@ export const addArtist = (artistID) => ({ type: ADD_ARTIST, id: artistID });
 
 export const addSearchQuery = (text, entitie) => ({ type: ADD_QUERY, text, entitie });
 
-export const toggleTheme = (theme) => ({ type: TOGGLE_THEME, theme });
+export const setTheme = (theme) => ({ type: TOGGLE_THEME, theme });
 
 export const addSearchData = (data) => ({ type: ADD_DATA, data });
 export const cleanSearchData = () => ({ type: CLEAN_DATA });

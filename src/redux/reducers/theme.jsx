@@ -1,6 +1,6 @@
 import { TOGGLE_THEME } from '../actions';
 
-const INITITAL = 'dark';
+const INITITAL = 'light';
 
 export default function theme(state = INITITAL, action) {
   switch (action.type) {
