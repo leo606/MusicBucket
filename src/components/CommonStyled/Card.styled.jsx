@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-const StyledArtistCardLi = styled.li`
+const CardStyled = styled.li`
   background-color: ${({ theme }) => theme.foreground};
   list-style: none;
-  padding: .9em;
+  padding: .6em;
   margin: 1em auto;
   width: 90%;
   border-radius: .3em;
@@ -25,4 +25,4 @@ const StyledArtistCardLi = styled.li`
   }
 `;
 
-export default StyledArtistCardLi;
+export default CardStyled;
