@@ -1,24 +1,11 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { SearchForm, SearchList } from './components';
-import { fetchSearch } from './redux/actions';
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+import Main from './pages/Main/Main';
 
 export default function App() {
-  const query = useSelector((store) => store.searchQuery);
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    if (query.text) {
-      const queryText = query.text.split(' ').join('%20');
-      dispatch(fetchSearch(queryText, query.entitie));
-    }
-  }, [query]);
-
   return (
-    <>
-      <h1>App_</h1>
-      <SearchForm />
-      {query.text && <SearchList />}
-    </>
+    <Switch>
+      <Route exact path="/" component={Main} />
+    </Switch>
   );
 }
