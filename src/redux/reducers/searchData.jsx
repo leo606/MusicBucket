@@ -1,4 +1,4 @@
-import { ADD_DATA, CLEAN_DATA, LOAD } from '../actions';
+import { ADD_SEARCH_DATA, CLEAN_DATA, LOAD_SEARCH } from '../actions';
 
 const INITIAL = {
   isLoading: false,
@@ -7,10 +7,10 @@ const INITIAL = {
 
 export default function searchData(state = INITIAL, action) {
   switch (action.type) {
-    case LOAD:
-      return { ...state, isLoading: action.status };
-    case ADD_DATA:
+    case ADD_SEARCH_DATA:
       return { ...state, data: action.data, isLoading: false };
+    case LOAD_SEARCH:
+      return { ...state, isLoading: action.status };
     case CLEAN_DATA:
       return { ...state, data: {} };
     default:
