@@ -11,7 +11,6 @@ export default function ReleaseCard({ release }) {
         <h4>{release['artist-credit'][0].name}</h4>
         <h5>{release['primary-type']}</h5>
         <h5>{release.country}</h5>
-        <span>{release.id}</span>
       </Link>
     </CardStyled>
 
