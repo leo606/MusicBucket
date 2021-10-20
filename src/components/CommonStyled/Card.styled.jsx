@@ -5,7 +5,7 @@ const CardStyled = styled.li`
   list-style: none;
   padding: .6em;
   margin: 1em auto;
-  width: 90%;
+  max-width: 96%;
   border-radius: .3em;
   transition: 150ms;
 
