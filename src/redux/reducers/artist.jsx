@@ -1,7 +1,7 @@
 import { ADD_ARTIST_DATA, LOAD_ARTIST } from '../actions';
 
 const INITIAL = {
-  id: {},
+  isLoading: true,
 };
 
 export default function artist(state = INITIAL, action) {

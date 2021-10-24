@@ -31,7 +31,6 @@ export const fetchSearch = (query, entitie) => async (dispatch) => {
 
 export const fetchArtist = (artistMbid) => async (dispatch) => {
   try {
-    dispatch(loadingArtistData(true));
     const resp = await fetchArtistAPI(artistMbid);
     return dispatch(addArtistData(resp));
   } catch (e) {
