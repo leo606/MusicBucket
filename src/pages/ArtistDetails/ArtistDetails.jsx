@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router';
 import { fetchArtist } from '../../redux/actions';
@@ -9,16 +9,15 @@ export default function ArtistDetails() {
   const artistData = useSelector(({ artist }) => artist);
   const dispatch = useDispatch();
 
-  function loadArtist() {
-    dispatch(fetchArtist(artistId));
-  }
+  useEffect(() => dispatch(fetchArtist(artistId)), []);
+
+  if (artistData.isLoading) return <span>load</span>;
 
   return (
     <StyledMainDetais>
-      {artistData.isLoading
-        ? <span>load</span>
-        : <span>{artistData['sort-name']}</span> }
-      <input type="button" value="click" onClick={loadArtist} />
+      <h1>{artistData.name}</h1>
+      <h2>{artistData.disambiguation}</h2>
+
     </StyledMainDetais>
   );
 }
