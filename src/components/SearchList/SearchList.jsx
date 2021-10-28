@@ -13,12 +13,12 @@ export default function SearchList() {
   return (
     <>
       {
-        searchData.data.count && (
+        searchData.count && (
           <ol>
-            {searchData.data.artists ? (
-              searchData.data.artists.map((art) => <ArtistCard key={art.id} artist={art} />)
+            {searchData.artists ? (
+              searchData.artists.map((art) => <ArtistCard key={art.id} artist={art} />)
             ) : (
-              searchData.data['release-groups'].map((rel) => <ReleaseCard key={rel.id} release={rel} />)
+              searchData['release-groups'].map((rel) => <ReleaseCard key={rel.id} release={rel} />)
             )}
           </ol>
         )
