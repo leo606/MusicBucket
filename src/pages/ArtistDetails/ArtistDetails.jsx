@@ -22,7 +22,9 @@ export default function ArtistDetails() {
     <StyledMainDetais>
       <h1>{artistData.name}</h1>
       <h2>{artistData.disambiguation}</h2>
-      <p>{JSON.stringify(mainAlbums)}</p>
+      <ul>
+        {mainAlbums.map((album) => <li>{album.title}</li>)}
+      </ul>
     </StyledMainDetais>
   );
 }
