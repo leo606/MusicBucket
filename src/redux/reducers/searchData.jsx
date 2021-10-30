@@ -1,18 +1,21 @@
-import { ADD_DATA, CLEAN_DATA, LOAD } from '../actions';
+import {
+  ADD_SEARCH_DATA,
+  CLEAN_SEARCH_DATA,
+  LOAD_SEARCH,
+} from '../actions';
 
 const INITIAL = {
   isLoading: false,
-  data: {},
 };
 
 export default function searchData(state = INITIAL, action) {
   switch (action.type) {
-    case LOAD:
+    case ADD_SEARCH_DATA:
+      return { isLoading: false, ...action.data };
+    case LOAD_SEARCH:
       return { ...state, isLoading: action.status };
-    case ADD_DATA:
-      return { ...state, data: action.data, isLoading: false };
-    case CLEAN_DATA:
-      return { ...state, data: {} };
+    case CLEAN_SEARCH_DATA:
+      return { ...INITIAL };
     default:
       return state;
   }

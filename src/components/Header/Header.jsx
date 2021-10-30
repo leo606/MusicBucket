@@ -4,7 +4,7 @@ import StyledHeader from './Header.styled';
 import { setTheme } from '../../redux/actions';
 
 export default function Header() {
-  const themeStatus = useSelector((state) => state.theme === 'dark' || false);
+  const themeStatus = useSelector((state) => state.theme === 'dark');
   const dispatch = useDispatch();
 
   function handleThemeSwitch({ target }) {
@@ -16,7 +16,12 @@ export default function Header() {
     <StyledHeader>
       <h1>Header</h1>
       <label htmlFor="theme-switch">
-        <input type="checkbox" id="theme-switch" checked={themeStatus} onChange={handleThemeSwitch} />
+        <input
+          type="checkbox"
+          id="theme-switch"
+          checked={themeStatus}
+          onChange={handleThemeSwitch}
+        />
       </label>
     </StyledHeader>
   );
