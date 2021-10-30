@@ -9,7 +9,7 @@ export default function ArtistDetails() {
   const dispatch = useDispatch();
   const { artistId } = useParams();
   const artistData = useSelector(({ artist }) => artist);
-  const mainAlbums = useAlbumsFilter(artistData['release-groups']);
+  const [mainAlbums, compilations, eps] = useAlbumsFilter();
 
   useEffect(() => {
     dispatch(fetchArtist(artistId));
@@ -24,6 +24,14 @@ export default function ArtistDetails() {
       <h2>{artistData.disambiguation}</h2>
       <ul>
         {mainAlbums.map((album) => <li>{album.title}</li>)}
+      </ul>
+      <hr />
+      <ul>
+        {compilations.map((album) => <li>{album.title}</li>)}
+      </ul>
+      <hr />
+      <ul>
+        {eps.map((album) => <li>{album.title}</li>)}
       </ul>
     </StyledMainDetais>
   );
