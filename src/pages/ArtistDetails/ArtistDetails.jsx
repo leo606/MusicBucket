@@ -28,11 +28,11 @@ export default function ArtistDetails() {
           <dd>{artistData.country}</dd>
           <dt>Activity</dt>
           <dd>
-            {new Date(artistData['life-span'].begin).getUTCFullYear()}
+            {new Date(artistData.lifeSpan.begin).getUTCFullYear()}
             {' '}
             -
             {' '}
-            {artistData['life-span'].ended ? new Date(artistData['life-span'].end).getUTCFullYear() : 'today'}
+            {artistData.lifeSpan.ended ? new Date(artistData['life-span'].end).getUTCFullYear() : 'today'}
           </dd>
           <dd>
             {artistData.genres.map(({ name }) => (

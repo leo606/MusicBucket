@@ -6,7 +6,7 @@ import {
 
 const INITIAL = {
   isLoading: true,
-  'release-groups': [],
+  releaseGroups: [],
 };
 
 export default function artist(state = INITIAL, action) {

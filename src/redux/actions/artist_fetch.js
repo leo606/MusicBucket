@@ -34,8 +34,7 @@ export const loadingArtistData = (status) => ({ type: LOAD_ARTIST, status });
 export const fetchArtist = (artistMbid) => async (dispatch) => {
   try {
     const resp = await fetchArtistAPI(artistMbid);
-    console.log(artistSerialize(resp));
-    return dispatch(addArtistData(resp));
+    return dispatch(addArtistData(artistSerialize(resp)));
   } catch (e) {
     dispatch(loadingArtistData(false));
     return e;
