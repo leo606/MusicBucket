@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router';
+import { ArtistDetailsHeader } from '../../components';
 import useAlbumsFilter from '../../hooks/useAlbumsFilter';
 import { fetchArtist, cleanArtisData } from '../../redux/actions';
 import StyledMainDetais from './ArtistDetails.styled';
@@ -20,8 +21,9 @@ export default function ArtistDetails() {
 
   return (
     <StyledMainDetais>
-      <h1>{artistData.name}</h1>
-      <h3>{artistData.disambiguation}</h3>
+      <ArtistDetailsHeader />
+      <br />
+      <br />
       <section>
         <dl>
           <dt>Country</dt>
@@ -32,7 +34,7 @@ export default function ArtistDetails() {
             {' '}
             -
             {' '}
-            {artistData.lifeSpan.ended ? new Date(artistData['life-span'].end).getUTCFullYear() : 'today'}
+            {artistData.lifeSpan.ended ? new Date(artistData.lifeSpan.end).getUTCFullYear() : 'today'}
           </dd>
           <dd>
             {artistData.genres.map(({ name }) => (
