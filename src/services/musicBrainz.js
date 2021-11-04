@@ -14,7 +14,7 @@ export async function fetchSearchAPI(query, entitie) {
 
 export async function fetchArtistAPI(artistMbid) {
   try {
-    const req = await fetch(`${ARTIST_URL}${artistMbid}?inc=release-groups`, OPTIONS);
+    const req = await fetch(`${ARTIST_URL}${artistMbid}?inc=release-groups+genres`, OPTIONS);
     const resp = await req.json();
     return resp;
   } catch (e) {

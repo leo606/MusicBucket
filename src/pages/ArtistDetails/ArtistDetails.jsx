@@ -21,7 +21,30 @@ export default function ArtistDetails() {
   return (
     <StyledMainDetais>
       <h1>{artistData.name}</h1>
-      <h2>{artistData.disambiguation}</h2>
+      <h3>{artistData.disambiguation}</h3>
+      <section>
+        <dl>
+          <dt>Country</dt>
+          <dd>{artistData.country}</dd>
+          <dt>Activity</dt>
+          <dd>
+            {new Date(artistData['life-span'].begin).getUTCFullYear()}
+            {' '}
+            -
+            {' '}
+            {artistData['life-span'].ended ? new Date(artistData['life-span'].end).getUTCFullYear() : 'today'}
+          </dd>
+          <dd>
+            {artistData.genres.map(({ name }) => (
+              <span>
+                {name}
+              </span>
+            ))}
+          </dd>
+        </dl>
+      </section>
+      <br />
+      <br />
       <ul>
         {mainAlbums.map((album) => <li>{album.title}</li>)}
       </ul>
