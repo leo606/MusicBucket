@@ -20,8 +20,8 @@ function ArtistInfoSection() {
         </dd>
         <dt>Genres</dt>
         <dd>
-          {genres.map(({ name }) => (
-            <span>
+          {genres.map(({ name, id }) => (
+            <span key={id}>
               {name}
             </span>
           ))}
