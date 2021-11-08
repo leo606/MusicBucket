@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router';
-import { ArtistDetailsHeader, ArtistInfoSection, ArtistAlbumsList } from '../../components';
+import { ArtistDetailsHeader, ArtistInfoSection, ArtistAlbumsList } from './components';
 import { fetchArtist, cleanArtisData } from '../../redux/actions';
 import StyledMainDetais from './ArtistDetails.styled';
 
