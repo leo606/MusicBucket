@@ -7,5 +7,8 @@ export * from './search_clean';
 export * from './artist_fetch';
 export * from './artist_clean';
 
+// release
+export * from './release_fetch';
+
 // theme
 export * from './theme_toggle';
