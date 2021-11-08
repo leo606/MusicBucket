@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 const ArtistInfoSectionStyled = styled.section`
-  background-color: ${({ theme }) => theme.background};
-  color: ${({ theme }) => theme.foreground};
   padding: 0.6em;
 
   dl {
