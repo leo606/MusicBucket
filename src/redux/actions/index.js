@@ -8,7 +8,7 @@ export * from './artist_fetch';
 export * from './artist_clean';
 
 // release
-export * from './release_fetch';
+export * from './releaseGroup_fetch';
 
 // theme
 export * from './theme_toggle';
