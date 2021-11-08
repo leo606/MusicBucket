@@ -10,7 +10,7 @@ function ArtistAlbumsList() {
       {
         mainAlbums.length > 0 && (
           <>
-            <h4>Main Albums</h4>
+            <h4>Albums</h4>
             <ul>
               {mainAlbums.map((album) => <li key={album.id}>{album.title}</li>)}
             </ul>

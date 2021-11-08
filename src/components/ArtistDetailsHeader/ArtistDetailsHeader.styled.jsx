@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 const ArtistDetailsHeaderStyled = styled.section`
-  padding: 1em;
+  padding: .6em;
 
   h1 {
-    margin-bottom: .3em;
+    font-size: 3em;
   }
 `;
 
