@@ -6,14 +6,14 @@ function ArtistAlbumsList() {
   const [mainAlbums, compilations, eps] = useAlbumsFilter();
 
   return (
-    <section>
+    <ArtistAlbumsListStyled>
       {
         mainAlbums.length > 0 && (
           <>
-            <h4>Main Albums</h4>
-            <ArtistAlbumsListStyled>
-              {mainAlbums.map((album) => <li>{album.title}</li>)}
-            </ArtistAlbumsListStyled>
+            <h4>Albums</h4>
+            <ul>
+              {mainAlbums.map((album) => <li key={album.id}>{album.title}</li>)}
+            </ul>
           </>
         )
       }
@@ -21,9 +21,9 @@ function ArtistAlbumsList() {
         compilations.length > 0 && (
           <>
             <h4>Compilations Albums</h4>
-            <ArtistAlbumsListStyled>
-              {compilations.map((album) => <li>{album.title}</li>)}
-            </ArtistAlbumsListStyled>
+            <ul>
+              {compilations.map((album) => <li key={album.id}>{album.title}</li>)}
+            </ul>
           </>
         )
       }
@@ -31,13 +31,13 @@ function ArtistAlbumsList() {
         eps.length > 0 && (
           <>
             <h4>EPs Albums</h4>
-            <ArtistAlbumsListStyled>
-              {eps.map((album) => <li>{album.title}</li>)}
-            </ArtistAlbumsListStyled>
+            <ul>
+              {eps.map((album) => <li key={album.id}>{album.title}</li>)}
+            </ul>
           </>
         )
       }
-    </section>
+    </ArtistAlbumsListStyled>
 
   );
 }
