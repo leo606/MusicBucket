@@ -14,6 +14,7 @@ function releaseGroupSerialize(group) {
     id,
     title,
     releases,
+    artistCredit: group['artist-credit'],
     disambiguation,
     firstReleaseDate: group['first-release-date'],
     primaryType: group['primary-type'],
@@ -28,6 +29,7 @@ export const fetchReleaseGroup = (releaseMbid) => async (dispatch) => {
     const resp = await fetchReleaseGroupAPI(releaseMbid);
     return dispatch(addReleaseGroupData(releaseGroupSerialize(resp)));
   } catch (e) {
+    dispatch(loadingReleaseGroupData(false));
     return e;
   }
 };
