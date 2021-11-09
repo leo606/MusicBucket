@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router';
 import { fetchReleaseGroup, cleanReleaseGroupData } from '../../redux/actions';
+import ReleaseGroupInfoSection from './components/ReleaseGroupInfoSection/ReleaseGroupInfoSection';
 import ReleaseGroupDetailsStyled from './ReleaseGroupDetails.styled';
 
 function ReleaseGroupDetails() {
@@ -18,6 +19,7 @@ function ReleaseGroupDetails() {
   return (
     <ReleaseGroupDetailsStyled>
       {release.title}
+      <ReleaseGroupInfoSection />
     </ReleaseGroupDetailsStyled>
   );
 }
