@@ -14,6 +14,7 @@ function releaseGroupSerialize(group) {
     id,
     title,
     releases,
+    mainArtist: group['artist-credit'][0].artist,
     artistCredit: group['artist-credit'],
     disambiguation,
     firstReleaseDate: group['first-release-date'],

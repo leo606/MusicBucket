@@ -38,8 +38,8 @@ function InfoSection({ type }) {
         <dl>
           <dt>Type</dt>
           <dd>{data.primaryType}</dd>
-          <dt>Releases count</dt>
-          <dd>{data.releases.length}</dd>
+          <dt>First Release Date</dt>
+          <dd>{data.firstReleaseDate}</dd>
         </dl>
       </InfoSectionStyled>
     );
