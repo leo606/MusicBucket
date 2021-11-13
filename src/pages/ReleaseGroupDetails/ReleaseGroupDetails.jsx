@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router';
 import { fetchReleaseGroup, cleanReleaseGroupData } from '../../redux/actions';
-import InfoSection from '../../components/InfoSection/InfoSection';
+import { DetailsInfoSection } from '../../components';
 import ReleaseGroupDetailsStyled from './ReleaseGroupDetails.styled';
 
 function ReleaseGroupDetails() {
@@ -19,7 +19,7 @@ function ReleaseGroupDetails() {
   return (
     <ReleaseGroupDetailsStyled>
       {release.title}
-      <InfoSection type="releaseGroup" />
+      <DetailsInfoSection type="releaseGroup" />
     </ReleaseGroupDetailsStyled>
   );
 }

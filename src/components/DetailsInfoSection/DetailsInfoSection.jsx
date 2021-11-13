@@ -1,14 +1,14 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import propTypes from 'prop-types';
-import InfoSectionStyled from './InfoSection.styled';
+import DetailsInfoSectionStyled from './DetailsInfoSection.styled';
 
-function InfoSection({ type }) {
+function DetailsInfoSection({ type }) {
   const data = useSelector((state) => state[type]);
 
   if (type === 'artist') {
     return (
-      <InfoSectionStyled>
+      <DetailsInfoSectionStyled>
         <dl>
           <dt>Country</dt>
           <dd>{data.country}</dd>
@@ -29,25 +29,25 @@ function InfoSection({ type }) {
             ))}
           </dd>
         </dl>
-      </InfoSectionStyled>
+      </DetailsInfoSectionStyled>
     );
   }
   if (type === 'releaseGroup') {
     return (
-      <InfoSectionStyled>
+      <DetailsInfoSectionStyled>
         <dl>
           <dt>Type</dt>
           <dd>{data.primaryType}</dd>
           <dt>First Release Date</dt>
           <dd>{data.firstReleaseDate}</dd>
         </dl>
-      </InfoSectionStyled>
+      </DetailsInfoSectionStyled>
     );
   }
 }
 
-InfoSection.propTypes = {
+DetailsInfoSection.propTypes = {
   type: propTypes.string.isRequired,
 };
 
-export default InfoSection;
+export default DetailsInfoSection;
