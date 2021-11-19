@@ -1,6 +1,6 @@
 import React from 'react';
 import ArtistAlbumsListStyled from './ArtistAlbumsList.styled';
-import useAlbumsFilter from '../../hooks/useAlbumsFilter';
+import useAlbumsFilter from '../../../../hooks/useAlbumsFilter';
 
 function ArtistAlbumsList() {
   const [mainAlbums, compilations, eps] = useAlbumsFilter();

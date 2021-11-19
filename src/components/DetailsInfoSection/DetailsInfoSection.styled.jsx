@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const ArtistInfoSectionStyled = styled.section`
+const DetailsInfoSectionStyled = styled.section`
   padding: 0.6em;
 
   dl {
@@ -18,4 +18,4 @@ const ArtistInfoSectionStyled = styled.section`
   }
 `;
 
-export default ArtistInfoSectionStyled;
+export default DetailsInfoSectionStyled;

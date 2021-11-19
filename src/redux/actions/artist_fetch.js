@@ -1,5 +1,8 @@
 import { fetchArtistAPI } from '../../services/musicBrainz';
 
+export const LOAD_ARTIST = 'LOAD_ARTIST';
+export const ADD_ARTIST_DATA = 'ADD_ARTIST_DATA';
+
 function artistSerialize(artist) {
   const {
     area, gender, disambiguation, id, type, name, country, isnis, genres,
@@ -24,9 +27,6 @@ function artistSerialize(artist) {
     lifeSpan: artist['life-span'],
   };
 }
-
-export const LOAD_ARTIST = 'LOAD_ARTIST';
-export const ADD_ARTIST_DATA = 'ADD_ARTIST_DATA';
 
 export const addArtistData = (data) => ({ type: ADD_ARTIST_DATA, data });
 export const loadingArtistData = (status) => ({ type: LOAD_ARTIST, status });
