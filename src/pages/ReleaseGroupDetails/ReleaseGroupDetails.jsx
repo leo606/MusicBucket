@@ -4,7 +4,7 @@ import { useParams } from 'react-router';
 import { fetchReleaseGroup, cleanReleaseGroupData } from '../../redux/actions';
 import { DetailsInfoSection } from '../../components';
 import ReleaseGroupDetailsStyled from './ReleaseGroupDetails.styled';
-import ReleaseList from './subComponents/ReleaseList/ReleaseList';
+import { ReleaseList, ReleaseGroupDetailsHeader } from './subComponents';
 
 function ReleaseGroupDetails() {
   const dispatch = useDispatch();
@@ -19,7 +19,7 @@ function ReleaseGroupDetails() {
   if (release.isLoading) return <span>load</span>;
   return (
     <ReleaseGroupDetailsStyled>
-      {release.title}
+      <ReleaseGroupDetailsHeader />
       <DetailsInfoSection type="releaseGroup" />
       <ReleaseList />
     </ReleaseGroupDetailsStyled>
