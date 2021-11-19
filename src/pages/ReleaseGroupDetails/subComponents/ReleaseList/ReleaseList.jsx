@@ -7,13 +7,11 @@ function ReleaseList() {
   const releases = useSelector(({ releaseGroup }) => releaseGroup.releases);
   return (
     <ReleaseListStyled>
+      <h4>Releases</h4>
       <ul>
         {releases.map((r) => (
           <Link to={`/release/${r.id}`}>
             <li key={r.id}>
-              {r.title}
-              {' '}
-              -
               {' '}
               {r.media[0].format}
               {' '}
