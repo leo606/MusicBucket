@@ -17,7 +17,6 @@ export default function Main() {
 
   return (
     <StyledMain>
-      <h1>Main</h1>
       <SearchForm />
       {query.text && <SearchList />}
     </StyledMain>

@@ -9,7 +9,10 @@ export default function ArtistCard({ artist }) {
       <Link to={`artist/${artist.id}`}>
         <h3>{artist.name}</h3>
         <h4>{artist.disambiguation}</h4>
-        <h5>{artist.country}</h5>
+        <div>
+          <h5>{artist.type}</h5>
+          {artist.country && <h5>{artist.country}</h5>}
+        </div>
       </Link>
     </CardStyled>
   );

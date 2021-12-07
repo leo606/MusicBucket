@@ -1,9 +1,12 @@
 import styled from 'styled-components';
 
-const StyledSearchForm = styled.form`
-  display: flex;
-  flex-direction: column;
-  width: 90%;
+const StyledSearchFormSection = styled.div`
+  width: 60%;
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
 
   input {
     background-color: ${({ theme }) => theme.foreground};
@@ -33,4 +36,4 @@ const StyledSearchForm = styled.form`
   }
 `;
 
-export default StyledSearchForm;
+export default StyledSearchFormSection;

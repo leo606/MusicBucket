@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addSearchQuery, cleanSearchData, loadingSearchData } from '../../redux/actions';
-import StyledSearchForm from './SearchForm.styled';
+import StyledSearchFormSection from './SearchForm.styled';
 
 export default function SearchForm() {
   const [queryIn, setQueryIn] = useState('');
@@ -16,44 +16,48 @@ export default function SearchForm() {
     setEntitieIn(target.value);
   }
 
-  function handleClickSearch() {
+  function handleSubmitSearch(e) {
+    e.preventDefault();
     if (!queryIn) dispatch(cleanSearchData());
     dispatch(loadingSearchData(true));
     dispatch(addSearchQuery(queryIn, entitieIn));
   }
 
   return (
-    <StyledSearchForm>
-      <input
-        type="text"
-        name="queryIn"
-        value={queryIn}
-        id="search-input"
-        onChange={handleChangeText}
-      />
-      <div>
-        <label htmlFor="artist-radio">
-          <input
-            type="radio"
-            name="entitieRadio"
-            id="artist-radio"
-            value="artist"
-            onChange={handleChangeRadio}
-          />
-          Artist
-        </label>
-        <label htmlFor="album-radio">
-          <input
-            type="radio"
-            name="entitieRadio"
-            id="album-radio"
-            value="release-group"
-            onChange={handleChangeRadio}
-          />
-          Album
-        </label>
-      </div>
-      <input type="button" value="Search" onClick={handleClickSearch} />
-    </StyledSearchForm>
+    <StyledSearchFormSection>
+      <form action="" onSubmit={handleSubmitSearch}>
+        <input
+          type="text"
+          name="queryIn"
+          placeholder="Search"
+          value={queryIn}
+          id="search-input"
+          onChange={handleChangeText}
+        />
+        <div>
+          <label htmlFor="artist-radio">
+            <input
+              type="radio"
+              name="entitieRadio"
+              id="artist-radio"
+              value="artist"
+              onChange={handleChangeRadio}
+            />
+            Artist
+          </label>
+          <label htmlFor="album-radio">
+            <input
+              type="radio"
+              name="entitieRadio"
+              id="album-radio"
+              value="release-group"
+              onChange={handleChangeRadio}
+            />
+            Album
+          </label>
+        </div>
+        <input type="submit" value="Search" />
+      </form>
+    </StyledSearchFormSection>
   );
 }

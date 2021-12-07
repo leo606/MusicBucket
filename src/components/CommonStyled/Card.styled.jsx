@@ -23,6 +23,11 @@ const CardStyled = styled.li`
     font-size: 1.6em;
     margin-bottom: 0.4em;
   }
+
+  h5 {
+    display: inline-block;
+    margin-right: 1em;
+  }
 `;
 
 export default CardStyled;
