@@ -16,7 +16,7 @@ const StyledHeader = styled.header`
     max-width: 6em;
     min-height: 3em;
     justify-content: space-between;
-    margin-left: auto;
+    margin: 0 0 1em auto;
     align-items: center;
   }
     /* The switch - the box around the slider */
