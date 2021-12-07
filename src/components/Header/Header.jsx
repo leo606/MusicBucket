@@ -14,15 +14,19 @@ export default function Header() {
 
   return (
     <StyledHeader>
-      <h1>Header</h1>
-      <label htmlFor="theme-switch">
-        <input
-          type="checkbox"
-          id="theme-switch"
-          checked={themeStatus}
-          onChange={handleThemeSwitch}
-        />
-      </label>
+      <h1>Music Bucket</h1>
+      <div className="theme-toggle">
+        <span>Dark Theme:</span>
+        <label htmlFor="theme-switch" className="switch">
+          <input
+            type="checkbox"
+            id="theme-switch"
+            checked={themeStatus}
+            onChange={handleThemeSwitch}
+          />
+          <span className="slider" />
+        </label>
+      </div>
     </StyledHeader>
   );
 }
