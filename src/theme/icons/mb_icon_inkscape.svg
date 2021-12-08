@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="120"
+   height="120"
+   viewBox="0 0 120 120"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="mb_icon_inkscape.svg"
+   inkscape:export-filename="/home/leo/music-bucket/src/theme/icons/mb_16.png"
+   inkscape:export-xdpi="12.8"
+   inkscape:export-ydpi="12.8"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="4.6"
+     inkscape:cx="52.608696"
+     inkscape:cy="59.347826"
+     inkscape:window-width="1475"
+     inkscape:window-height="920"
+     inkscape:window-x="24"
+     inkscape:window-y="49"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="text5331" />
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect1994"
+       is_visible="true"
+       lpeversion="1"
+       satellites_param="F,0,1,1,0,2.2408798,0,1 @ F,0,0,1,0,2.2408798,0,1 @ F,0,0,1,0,7.6778089,0,1 @ F,0,0,1,0,7.6778089,0,1"
+       unit="px"
+       method="auto"
+       mode="F"
+       radius="0"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="rect846"
+       style="fill:#75ae02;fill-opacity:1;stroke:none;stroke-width:5.97521;stroke-linecap:square;paint-order:markers stroke fill"
+       d="m 22.461537,52.737193 h 75.160387 a 1.9398063,1.9398063 49.119064 0 1 1.91979,2.217756 L 91.495743,110.52813 A 8.8694665,8.8694665 139.11906 0 1 82.7178,118.12671 H 37.365657 a 8.869466,8.869466 40.880938 0 1 -8.777943,-7.59858 L 20.541747,54.954949 a 1.9398064,1.9398064 130.88094 0 1 1.91979,-2.217756 z"
+       sodipodi:nodetypes="ccccc"
+       inkscape:path-effect="#path-effect1994"
+       inkscape:original-d="M 20.220657,52.737193 H 99.862804 L 90.395609,118.12671 H 29.687848 Z" />
+    <path
+       id="path2231"
+       style="fill:none;stroke:#75ae02;stroke-width:2.88267;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       d="M 98.378084,41.428213 C 98.377266,19.881569 81.193835,2.4150649 59.997419,2.4152788 38.80173,2.4161082 21.619439,19.882308 21.61861,41.428213"
+       sodipodi:nodetypes="ccc" />
+    <rect
+       style="fill:#6ca002;fill-opacity:1;stroke:none;stroke-width:2.14716;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       id="rect3071"
+       width="79.61319"
+       height="4.942522"
+       x="20.278526"
+       y="45.332108"
+       ry="1.5300936" />
+    <g
+       aria-label="M"
+       id="text5331"
+       style="font-size:57.7468px;line-height:1.25;fill:#0682b6;stroke:#0682b6;stroke-width:3.044;stroke-linecap:square;stroke-linejoin:round">
+      <path
+         d="M 48.990807,61.825196 60.041739,93.027829 71.033576,61.825196 H 82.675468 V 104.84701 H 73.781535 V 93.086926 L 74.667974,72.787485 63.055631,104.84701 H 56.968753 L 45.385957,72.817032 46.272396,93.086926 V 104.84701 H 37.408011 V 61.825196 Z"
+         style="font-family:RobotoBold;-inkscape-font-specification:RobotoBold;stroke-width:3.18988"
+         id="path7993" />
+    </g>
+  </g>
+</svg>
