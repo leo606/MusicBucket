@@ -2,7 +2,9 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import { useSelector } from 'react-redux';
-import { Main, ArtistDetails, ReleaseGroupDetails } from './pages';
+import {
+  Main, ArtistDetails, ReleaseGroupDetails, ReleaseDetails,
+} from './pages';
 import theme from './theme/theme';
 import { Header } from './components';
 
@@ -21,6 +23,7 @@ export default function App() {
       <Switch>
         <Route exact path="/artist/:artistId" component={ArtistDetails} />
         <Route exact path="/release-group/:releaseId" component={ReleaseGroupDetails} />
+        <Route exact path="/release/:releaseId" component={ReleaseDetails} />
         <Route exact path="/" component={Main} />
       </Switch>
     </ThemeProvider>

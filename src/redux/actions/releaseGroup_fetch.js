@@ -1,10 +1,10 @@
 import { fetchReleaseGroupAPI } from '../../services/musicBrainz';
 
 export const ADD_RELEASE_GROUP_DATA = 'ADD_RELEASE_GROUP_DATA';
-export const LOAD_RELEASE = 'LOAD_RELEASE';
+export const LOAD_RELEASE_GROUP = 'LOAD_RELEASE_GROUP';
 
 export const addReleaseGroupData = (data) => ({ type: ADD_RELEASE_GROUP_DATA, data });
-export const loadingReleaseGroupData = (status) => ({ type: LOAD_RELEASE, status });
+export const loadingReleaseGroupData = (status) => ({ type: LOAD_RELEASE_GROUP, status });
 
 function releaseGroupSerialize(group) {
   const {
