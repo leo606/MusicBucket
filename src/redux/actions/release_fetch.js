@@ -31,7 +31,6 @@ function releaseSerialize(release) {
 }
 
 export const fetchRelease = (releaseMbid) => async (dispatch) => {
-  console.log('fetchRelease');
   try {
     const resp = await fetchReleaseAPI(releaseMbid);
     return dispatch(addReleaseData(releaseSerialize(resp)));
