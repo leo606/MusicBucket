@@ -16,9 +16,10 @@ const StyledSearchFormSection = styled.div`
     border-radius: .3em;
   }
 
-  input[type=button] {
+  input[type=submit] {
     font-weight: 600;
     font-size: 1.3em;
+    cursor: pointer;
   }
 
   input[type=radio] {

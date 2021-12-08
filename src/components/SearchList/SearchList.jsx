@@ -10,11 +10,14 @@ export default function SearchList() {
   if (searchData.isLoading) {
     return (<span>loading...</span>);
   }
+  if (searchData.count <= 0) {
+    return (<span>not found</span>);
+  }
 
   return (
     <>
       {
-        searchData.count && (
+        searchData.count > 0 && (
           <SearchListStyled>
             {searchData.artists ? (
               searchData.artists.map((art) => <ArtistCard key={art.id} artist={art} />)
