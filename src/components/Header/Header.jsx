@@ -19,7 +19,11 @@ export default function Header() {
         <h1>Music Bucket</h1>
       </div>
       <div className="theme-toggle">
-        <span>Dark Theme:</span>
+        <span>
+          Dark Theme:
+          {' '}
+          {themeStatus ? 'ON' : 'OFF'}
+        </span>
         <label htmlFor="theme-switch" className="switch">
           <input
             type="checkbox"

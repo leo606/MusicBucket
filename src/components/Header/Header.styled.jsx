@@ -32,6 +32,10 @@ const StyledHeader = styled.header`
     margin: 0 0 1em auto;
     align-items: center;
   }
+
+  .theme-toggle span {
+    text-align: center;
+  }
     /* The switch - the box around the slider */
   .switch {
     position: relative;
