@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ArtistAlbumsListStyled from './ArtistAlbumsList.styled';
 import useAlbumsFilter from '../../../../hooks/useAlbumsFilter';
 
@@ -12,7 +13,11 @@ function ArtistAlbumsList() {
           <>
             <h4>Albums</h4>
             <ul>
-              {mainAlbums.map((album) => <li key={album.id}>{album.title}</li>)}
+              {mainAlbums.map((album) => (
+                <Link to={`/release-group/${album.id}`}>
+                  <li key={album.id}>{album.title}</li>
+                </Link>
+              ))}
             </ul>
           </>
         )
@@ -22,7 +27,11 @@ function ArtistAlbumsList() {
           <>
             <h4>Compilations Albums</h4>
             <ul>
-              {compilations.map((album) => <li key={album.id}>{album.title}</li>)}
+              {compilations.map((album) => (
+                <Link to={`/release-group/${album.id}`}>
+                  <li key={album.id}>{album.title}</li>
+                </Link>
+              ))}
             </ul>
           </>
         )
@@ -32,7 +41,11 @@ function ArtistAlbumsList() {
           <>
             <h4>EPs Albums</h4>
             <ul>
-              {eps.map((album) => <li key={album.id}>{album.title}</li>)}
+              {eps.map((album) => (
+                <Link to={`/release-group/${album.id}`}>
+                  <li key={album.id}>{album.title}</li>
+                </Link>
+              ))}
             </ul>
           </>
         )
