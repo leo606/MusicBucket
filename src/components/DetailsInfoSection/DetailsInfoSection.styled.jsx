@@ -15,6 +15,18 @@ const DetailsInfoSectionStyled = styled.section`
   dd {
     grid-column-start: 2;
     margin: auto 0;
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+  dd span {
+    display: inline-block;
+    background-color: ${({ theme }) => theme.foreground};
+    color: ${({ theme }) => theme.background};
+    text-align: center;
+    border-radius: .3em;
+    padding: .2em;
+    margin: .6em .3em;
   }
 `;
 

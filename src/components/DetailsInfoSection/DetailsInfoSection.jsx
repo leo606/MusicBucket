@@ -32,6 +32,7 @@ function DetailsInfoSection({ type }) {
       </DetailsInfoSectionStyled>
     );
   }
+
   if (type === 'releaseGroup') {
     return (
       <DetailsInfoSectionStyled>
