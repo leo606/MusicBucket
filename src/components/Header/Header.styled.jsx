@@ -6,10 +6,23 @@ const StyledHeader = styled.header`
 
   padding: .6em .6em 0 .6em;
 
-  h1 {
-    text-align: center;
-    margin-bottom: 1em;
+  .title {
+    display: flex;
+    align-items: center;
+    flex-grow: 0;
+    justify-content: space-between;
+    margin-bottom: 2em;
   }
+
+  h1 {
+    flex-grow: 3;
+    text-align: center;
+  }
+
+  img {
+    max-height: 3em;
+  }
+
   .theme-toggle {
     display: flex;
     flex-direction: column;

@@ -14,7 +14,10 @@ export default function Header() {
 
   return (
     <StyledHeader>
-      <h1>Music Bucket</h1>
+      <div className="title">
+        <img src="images/mb_icon_opt.svg" alt="" />
+        <h1>Music Bucket</h1>
+      </div>
       <div className="theme-toggle">
         <span>Dark Theme:</span>
         <label htmlFor="theme-switch" className="switch">
