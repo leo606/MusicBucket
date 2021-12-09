@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import ArtistCard from '../ArtistCard/ArtistCard';
-import { Loading } from '..';
+import Loading from '../Loading/Loading';
 import ReleaseCard from '../ReleaseCard/ReleaseCard';
 import SearchListStyled from './SearchList.styled';
 
