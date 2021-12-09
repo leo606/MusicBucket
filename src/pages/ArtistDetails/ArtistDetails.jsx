@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router';
 import { ArtistDetailsHeader, ArtistAlbumsList } from './subComponents';
-import { DetailsInfoSection } from '../../components';
+import { DetailsInfoSection, Loading } from '../../components';
 import { fetchArtist, cleanArtisData } from '../../redux/actions';
 import StyledMainDetais from './ArtistDetails.styled';
 
@@ -16,7 +16,7 @@ export default function ArtistDetails() {
     return () => dispatch(cleanArtisData());
   }, []);
 
-  if (artistData.isLoading) return <span>load</span>;
+  if (artistData.isLoading) return <Loading />;
 
   return (
     <StyledMainDetais>

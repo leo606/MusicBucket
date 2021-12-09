@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router';
-import { ReleaseHeader, DetailsInfoSection, ReleaseList } from '../../components';
+import {
+  ReleaseHeader, DetailsInfoSection, ReleaseList, Loading,
+} from '../../components';
 import { fetchRelease, cleanReleaseData } from '../../redux/actions';
 import ReleaseDetailsMainStyled from './ReleaseDetails.styled';
 
@@ -15,7 +17,7 @@ function ReleaseDetails() {
     return () => dispatch(cleanReleaseData());
   }, []);
 
-  if (release.isLoading) return <span>load</span>;
+  if (release.isLoading) return <Loading />;
 
   return (
     <ReleaseDetailsMainStyled>
