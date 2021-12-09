@@ -5,3 +5,4 @@ export { default as ReleaseCard } from './ReleaseCard/ReleaseCard';
 export { default as SearchForm } from './SearchForm/SearchForm';
 export { default as SearchList } from './SearchList/SearchList';
 export { default as ReleaseHeader } from './ReleaseHeader/ReleaseHeader';
+export { default as ReleaseList } from './ReleaseList/ReleaseList';

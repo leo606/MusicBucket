@@ -2,9 +2,8 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router';
 import { fetchReleaseGroup, cleanReleaseGroupData } from '../../redux/actions';
-import { DetailsInfoSection, ReleaseHeader } from '../../components';
+import { DetailsInfoSection, ReleaseHeader, ReleaseList } from '../../components';
 import ReleaseGroupDetailsStyled from './ReleaseGroupDetails.styled';
-import ReleaseList from './subComponents/ReleaseList/ReleaseList';
 
 function ReleaseGroupDetails() {
   const dispatch = useDispatch();
@@ -21,7 +20,7 @@ function ReleaseGroupDetails() {
     <ReleaseGroupDetailsStyled>
       <ReleaseHeader type="releaseGroup" />
       <DetailsInfoSection type="releaseGroup" />
-      <ReleaseList />
+      <ReleaseList type="releaseGroup" />
     </ReleaseGroupDetailsStyled>
   );
 }
