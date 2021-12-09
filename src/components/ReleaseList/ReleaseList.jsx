@@ -30,9 +30,13 @@ function ReleaseList({ type }) {
     return (
       <ReleaseListStyled>
         <h4>Track List</h4>
-        {release.media.tracks.map((t) => (
-          <li>{t.title}</li>
-        ))}
+        <ol>
+          {release.media.tracks.map((t) => (
+            <li key={t.id}>
+              {t.title}
+            </li>
+          ))}
+        </ol>
       </ReleaseListStyled>
     );
   }

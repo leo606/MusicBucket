@@ -14,7 +14,6 @@ const DetailsInfoSectionStyled = styled.section`
   }
   dd {
     grid-column-start: 2;
-    margin-right: auto;
     overflow: auto;
     white-space: nowrap;
   }
