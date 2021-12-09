@@ -3,6 +3,7 @@ import searchQuery from './searchQuery';
 import searchData from './searchData';
 import artist from './artist';
 import releaseGroup from './releaseGroup';
+import release from './release';
 import theme from './theme';
 
 const rootReducer = combineReducers({
@@ -11,6 +12,7 @@ const rootReducer = combineReducers({
   theme,
   artist,
   releaseGroup,
+  release,
 });
 
 export default rootReducer;

@@ -11,5 +11,9 @@ export * from './artist_clean';
 export * from './releaseGroup_fetch';
 export * from './releaseGroup_clean';
 
+// release
+export * from './release_fetch';
+export * from './release_clean';
+
 // theme
 export * from './theme_toggle';

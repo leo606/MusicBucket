@@ -32,6 +32,7 @@ function DetailsInfoSection({ type }) {
       </DetailsInfoSectionStyled>
     );
   }
+
   if (type === 'releaseGroup') {
     return (
       <DetailsInfoSectionStyled>
@@ -40,6 +41,25 @@ function DetailsInfoSection({ type }) {
           <dd>{data.primaryType}</dd>
           <dt>First Release Date</dt>
           <dd>{data.firstReleaseDate}</dd>
+        </dl>
+      </DetailsInfoSectionStyled>
+    );
+  }
+
+  if (type === 'release') {
+    return (
+      <DetailsInfoSectionStyled>
+        <dl>
+          <dt>Date</dt>
+          <dd>{data.date}</dd>
+          <dt>Packaging</dt>
+          <dd>{data.packaging}</dd>
+          <dt>Country</dt>
+          <dd>{data.country}</dd>
+          <dt>Quality</dt>
+          <dd>{data.quality}</dd>
+          <dt>Format</dt>
+          <dd>{data.media.format}</dd>
         </dl>
       </DetailsInfoSectionStyled>
     );
