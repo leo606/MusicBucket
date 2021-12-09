@@ -45,6 +45,25 @@ function DetailsInfoSection({ type }) {
       </DetailsInfoSectionStyled>
     );
   }
+
+  if (type === 'release') {
+    return (
+      <DetailsInfoSectionStyled>
+        <dl>
+          <dt>Date</dt>
+          <dd>{data.date}</dd>
+          <dt>Packaging</dt>
+          <dd>{data.packaging}</dd>
+          <dt>Country</dt>
+          <dd>{data.country}</dd>
+          <dt>Quality</dt>
+          <dd>{data.quality}</dd>
+          <dt>Format</dt>
+          <dd>{data.media.format}</dd>
+        </dl>
+      </DetailsInfoSectionStyled>
+    );
+  }
 }
 
 DetailsInfoSection.propTypes = {

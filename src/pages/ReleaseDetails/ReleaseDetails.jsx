@@ -1,7 +1,7 @@
-/* eslint-disable */
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router';
+import { ReleaseHeader, DetailsInfoSection } from '../../components';
 import { fetchRelease, cleanReleaseData } from '../../redux/actions';
 import ReleaseDetailsMainStyled from './ReleaseDetails.styled';
 
@@ -19,7 +19,8 @@ function ReleaseDetails() {
 
   return (
     <ReleaseDetailsMainStyled>
-      <span>{release.id}</span>
+      <ReleaseHeader type="release" />
+      <DetailsInfoSection type="release" />
     </ReleaseDetailsMainStyled>
   );
 }

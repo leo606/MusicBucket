@@ -43,7 +43,7 @@ export async function fetchReleaseGroupAPI(releaseMbid) {
 export async function fetchReleaseAPI(releaseMbid) {
   try {
     const req = await fetch(
-      `${RELEASE_URL}${releaseMbid}?inc=artists+recordings`,
+      `${RELEASE_URL}${releaseMbid}?inc=artists+recordings+release-groups`,
       OPTIONS,
     );
     const resp = await req.json();

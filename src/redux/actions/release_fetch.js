@@ -16,6 +16,7 @@ function releaseSerialize(release) {
     mainArtist: release['artist-credit'][0].artist,
     disambiguation,
     statusId: release['status-id'],
+    releaseGroup: release['release-group'],
     textRepresentation: release['text-representation'],
     packagingId: release['packaging-id'],
     barcode,

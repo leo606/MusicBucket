@@ -6,15 +6,15 @@ const DetailsInfoSectionStyled = styled.section`
   dl {
     display: grid;
     grid-gap: 0.3em 1em;
-    max-width: 300px;
+    max-width: max-content;
   }
   dt {
     grid-column-start: 1;
-    margin: auto;
+    margin-left: auto;
   }
   dd {
     grid-column-start: 2;
-    margin: auto 0;
+    margin-right: auto;
     overflow: auto;
     white-space: nowrap;
   }
