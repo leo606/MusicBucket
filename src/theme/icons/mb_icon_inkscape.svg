@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="120"
-   height="120"
-   viewBox="0 0 120 120"
+   width="79.09227"
+   height="115.0819"
+   viewBox="0 0 79.09227 115.0819"
    version="1.1"
    id="svg5"
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
@@ -26,15 +26,19 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="px"
      showgrid="false"
-     inkscape:zoom="4.6"
-     inkscape:cx="52.608696"
-     inkscape:cy="59.347826"
+     inkscape:zoom="3.2526912"
+     inkscape:cx="28.591709"
+     inkscape:cy="60.565233"
      inkscape:window-width="1475"
      inkscape:window-height="920"
-     inkscape:window-x="24"
+     inkscape:window-x="201"
      inkscape:window-y="49"
      inkscape:window-maximized="0"
-     inkscape:current-layer="text5331" />
+     inkscape:current-layer="layer1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <defs
      id="defs2">
     <inkscape:path-effect
@@ -58,35 +62,56 @@
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
-    <path
-       id="rect846"
-       style="fill:#75ae02;fill-opacity:1;stroke:none;stroke-width:5.97521;stroke-linecap:square;paint-order:markers stroke fill"
-       d="m 22.461537,52.737193 h 75.160387 a 1.9398063,1.9398063 49.119064 0 1 1.91979,2.217756 L 91.495743,110.52813 A 8.8694665,8.8694665 139.11906 0 1 82.7178,118.12671 H 37.365657 a 8.869466,8.869466 40.880938 0 1 -8.777943,-7.59858 L 20.541747,54.954949 a 1.9398064,1.9398064 130.88094 0 1 1.91979,-2.217756 z"
-       sodipodi:nodetypes="ccccc"
-       inkscape:path-effect="#path-effect1994"
-       inkscape:original-d="M 20.220657,52.737193 H 99.862804 L 90.395609,118.12671 H 29.687848 Z" />
-    <path
-       id="path2231"
-       style="fill:none;stroke:#75ae02;stroke-width:2.88267;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
-       d="M 98.378084,41.428213 C 98.377266,19.881569 81.193835,2.4150649 59.997419,2.4152788 38.80173,2.4161082 21.619439,19.882308 21.61861,41.428213"
-       sodipodi:nodetypes="ccc" />
+     id="layer1"
+     transform="translate(-20.453863,-3.0448063)">
     <rect
-       style="fill:#6ca002;fill-opacity:1;stroke:none;stroke-width:2.14716;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
-       id="rect3071"
-       width="79.61319"
-       height="4.942522"
-       x="20.278526"
-       y="45.332108"
-       ry="1.5300936" />
+       style="fill:#0682b6;stroke:none;stroke-width:16.9349;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill"
+       id="rect1135"
+       width="123.47247"
+       height="123.47247"
+       x="-4.3370714"
+       y="-3.1788173"
+       ry="13.898654"
+       inkscape:export-filename="/home/leo/music-bucket/src/theme/icons/mb_16.png"
+       inkscape:export-xdpi="12.44"
+       inkscape:export-ydpi="12.44" />
     <g
-       aria-label="M"
-       id="text5331"
-       style="font-size:57.7468px;line-height:1.25;fill:#0682b6;stroke:#0682b6;stroke-width:3.044;stroke-linecap:square;stroke-linejoin:round">
+       id="g1819"
+       transform="translate(-2.6008351,-2.028339)"
+       inkscape:export-filename="/home/leo/music-bucket/src/theme/icons/mb_16.png"
+       inkscape:export-xdpi="12.44"
+       inkscape:export-ydpi="12.44">
       <path
-         d="M 48.990807,61.825196 60.041739,93.027829 71.033576,61.825196 H 82.675468 V 104.84701 H 73.781535 V 93.086926 L 74.667974,72.787485 63.055631,104.84701 H 56.968753 L 45.385957,72.817032 46.272396,93.086926 V 104.84701 H 37.408011 V 61.825196 Z"
-         style="font-family:RobotoBold;-inkscape-font-specification:RobotoBold;stroke-width:3.18988"
-         id="path7993" />
+         id="rect846"
+         style="fill:#75ae02;fill-opacity:1;stroke:none;stroke-width:6.27518;stroke-linecap:square;paint-order:markers stroke fill"
+         d="m 22.419807,46.00706 h 75.160387 a 1.9659429,1.9659429 48.739247 0 1 1.94922,2.221818 l -8.176237,62.285332 a 8.7515495,8.7515495 138.73925 0 1 -8.677107,7.6125 H 37.323927 a 8.751549,8.751549 41.260754 0 1 -8.677107,-7.6125 L 20.470586,48.228878 a 1.965943,1.965943 131.26075 0 1 1.949221,-2.221818 z"
+         sodipodi:nodetypes="ccccc"
+         inkscape:path-effect="#path-effect1994"
+         inkscape:original-d="m 20.178927,46.00706 h 79.642147 l -9.467195,72.11965 H 29.646118 Z"
+         inkscape:export-filename="/home/leo/music-bucket/src/theme/icons/rect1135.png"
+         inkscape:export-xdpi="12.8"
+         inkscape:export-ydpi="12.8" />
+      <path
+         id="path2231"
+         style="fill:none;stroke:#75ae02;stroke-width:6.75408;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+         d="M 95.901903,40.398057 C 95.901138,21.633169 79.827087,6.4216599 59.999131,6.4218462 40.171857,6.4225682 24.098872,21.633813 24.098097,40.398057"
+         sodipodi:nodetypes="ccc"
+         inkscape:export-filename="/home/leo/music-bucket/src/theme/icons/rect1135.png"
+         inkscape:export-xdpi="12.8"
+         inkscape:export-ydpi="12.8" />
+      <g
+         aria-label="M"
+         id="text5331"
+         style="font-size:57.7468px;line-height:1.25;fill:#f1f1f1;fill-opacity:1;stroke:#f1f1f1;stroke-width:3.044;stroke-linecap:square;stroke-linejoin:round;stroke-opacity:1"
+         transform="translate(-0.04173949,-1.269218)"
+         inkscape:export-filename="/home/leo/music-bucket/src/theme/icons/rect1135.png"
+         inkscape:export-xdpi="12.8"
+         inkscape:export-ydpi="12.8">
+        <path
+           d="M 48.990807,61.825196 60.041739,93.027829 71.033576,61.825196 H 82.675468 V 104.84701 H 73.781535 V 93.086926 L 74.667974,72.787485 63.055631,104.84701 H 56.968753 L 45.385957,72.817032 46.272396,93.086926 V 104.84701 H 37.408011 V 61.825196 Z"
+           style="font-family:RobotoBold;-inkscape-font-specification:RobotoBold;fill:#f1f1f1;fill-opacity:1;stroke:#f1f1f1;stroke-width:3.18988;stroke-opacity:1"
+           id="path7993" />
+      </g>
     </g>
   </g>
 </svg>
