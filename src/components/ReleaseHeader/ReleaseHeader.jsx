@@ -9,6 +9,9 @@ function ReleaseHeader({ type }) {
   if (type === 'releaseGroup') {
     return (
       <ReleaseHeaderStyled>
+        <div className="cover-container">
+          <img src={`https://coverartarchive.org/release-group/${release.id}/front-250`} alt="" />
+        </div>
         <h1>{release.title}</h1>
         <h3>{release.primaryType}</h3>
       </ReleaseHeaderStyled>
@@ -18,6 +21,9 @@ function ReleaseHeader({ type }) {
   if (type === 'release') {
     return (
       <ReleaseHeaderStyled>
+        <div className="cover-container">
+          <img src={`https://coverartarchive.org/release/${release.id}/front-250`} alt="" />
+        </div>
         <h1>{release.title}</h1>
         <h3>
           {release.releaseGroup['primary-type']}
