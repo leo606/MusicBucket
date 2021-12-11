@@ -15,7 +15,7 @@ function ReleaseList({ type }) {
             <Link to={`/release/${r.id}`}>
               <li key={r.id}>
                 {' '}
-                {r.media[0].format}
+                {r.media[0] && r.media[0].format}
                 {' '}
                 {r.date}
               </li>
