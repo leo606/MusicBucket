@@ -13,11 +13,22 @@ const ReleaseHeaderStyled = styled.section`
     width: 200px;
     height: 200px;
     margin: 0 auto;
+    animation : loadImg 1s infinite;
+    background: linear-gradient(to right, #eff1f3, #e2e2e2, #eff1f3);
+    background-size: 100% 50%;
+  }
+
+  @keyframes loadImg {
+    0% {
+      background-position: -100px 0;
+    }
+    100% {
+      background-position: 100px 0;
+    }
   }
 
   .cover-container img {
     max-width: 100%;
-    box-shadow: 0px 0px 20px -9px ${({ theme }) => theme.foreground};
   }
 
   @media screen and (min-width: 900px) {
