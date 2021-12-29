@@ -6,20 +6,27 @@ import ReleaseListStyled from './ReleaseList.styled';
 
 function ReleaseList({ type }) {
   const release = useSelector((state) => state[type]);
+
+  function msToMin(ms) {
+    const minutes = Math.floor(ms / 60000);
+    const seconds = ((ms % 60000) / 1000).toFixed(0);
+    return `${minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
+  }
+
   if (type === 'releaseGroup') {
     return (
       <ReleaseListStyled>
         <h4>Releases</h4>
         <ul>
           {release.releases.map((r) => (
-            <Link to={`/release/${r.id}`}>
-              <li key={r.id}>
+            <li key={r.id}>
+              <Link to={`/release/${r.id}`}>
                 {' '}
                 {r.media[0] && r.media[0].format}
                 {' '}
-                {r.date}
-              </li>
-            </Link>
+                <span>{r.date}</span>
+              </Link>
+            </li>
           ))}
         </ul>
       </ReleaseListStyled>
@@ -33,7 +40,14 @@ function ReleaseList({ type }) {
         <ol>
           {release.media.tracks.map((t) => (
             <li key={t.id}>
-              {t.title}
+              <div>
+                {`${t.position} - ${t.title}`}
+                <span>
+                  length:
+                  {' '}
+                  {msToMin(t.length)}
+                </span>
+              </div>
             </li>
           ))}
         </ol>
