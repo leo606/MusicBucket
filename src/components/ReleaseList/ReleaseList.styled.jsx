@@ -9,11 +9,20 @@ const ReleaseListStyled = styled.section`
   }
 
   ul, ol {
-    margin-left: 2em;
+    list-style: none;
   }
 
-  ul {
-    list-style: none;
+  li {
+    margin-bottom: 1em;
+    font-weight: bold;
+    max-width: 500px;
+  }
+
+  span {
+    display: block;
+    font-weight: normal;
+    font-size: 0.8em;
+    margin-top: 0.3em;
   }
 
   a {
