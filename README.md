@@ -16,10 +16,10 @@
 <section>
   <h2>Layout</h2>
   <h3>Web</h3>
-    <img src="images/web_home.jpg" alt="web page screenshot" />
+    <img width='300' src="images/web_home.jpg" alt="web page screenshot" />
     <br/>
     <br/>
-    <img src="images/web_release.jpg" alt="web page screenshot" />
+    <img width='300' src="images/web_release.jpg" alt="web page screenshot" />
   <h3>Mobile</h3>
-    <img src="" alt="" />
+    <img width='300' src="" alt="" />
 </section>
