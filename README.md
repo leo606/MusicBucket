@@ -14,12 +14,12 @@
 </section>
 <br/>
 <section align='center'>
-  <h2>Layout</h2>
-  <h3>Web</h3>
+  <h2 align='left'>Layout</h2>
+  <h3 align='left'>Web</h3>
     <img width='500' src="images/web_home.jpg" alt="web page screenshot" />
     <br/>
     <br/>
     <img width='500' src="images/web_release.jpg" alt="web page screenshot" />
-  <h3>Mobile</h3>
+  <h3 align='left'>Mobile</h3>
     <img width='300' src="" alt="" />
 </section>
