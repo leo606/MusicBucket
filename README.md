@@ -13,13 +13,13 @@
   </p>Projeto desenvolvido para praticar tecnologias de front-end como React, Redux e Styled Components</p>
 </section>
 <br/>
-<section>
+<section align='center'>
   <h2>Layout</h2>
   <h3>Web</h3>
-    <img width='500' align='center' src="images/web_home.jpg" alt="web page screenshot" />
+    <img width='500' src="images/web_home.jpg" alt="web page screenshot" />
     <br/>
     <br/>
-    <img width='500' align='center' src="images/web_release.jpg" alt="web page screenshot" />
+    <img width='500' src="images/web_release.jpg" alt="web page screenshot" />
   <h3>Mobile</h3>
-    <img width='300' align='center' src="" alt="" />
+    <img width='300' src="" alt="" />
 </section>
