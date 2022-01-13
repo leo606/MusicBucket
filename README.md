@@ -15,7 +15,7 @@
 <br/>
 <section align='center'>
   <h2 align='left'>Layout</h2>
-  <h3 align='left'>Web</h3>
+  <h3 align='left'>Desktop</h3>
     <img width='500' src="images/web_home.jpg" alt="web page screenshot" />
     <br/>
     <br/>
