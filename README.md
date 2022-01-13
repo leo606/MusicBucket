@@ -15,6 +15,8 @@
     * [Desktop](#Desktop)
     * [Mobile](#Mobile)
   * [**Funcionalidades**](#Funcionalidades)
+  * [**Como rodar o projeto**](#Como-rodar-o-projeto)
+    * [Executando](#Executando)
   
 
 ## Sobre
