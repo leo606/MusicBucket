@@ -21,6 +21,6 @@
     <br/>
     <img width='500' src="images/web_release.jpg" alt="web page screenshot" />
   <h3 align='left'>Mobile</h3>
-    <img width='300' src="images/mob_home.jpg" alt="" />
-    <img width='300' src="images/mob_artist.jpg" alt="" />
+    <img width='200' src="images/mob_home.jpg" alt="" />
+    <img width='200' src="images/mob_artist.jpg" alt="" />
 </section>
