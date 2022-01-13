@@ -10,8 +10,8 @@
 
 
 ## Tabela de conteúdos
-  * [Sobre o projeto](#Sobre)
-  * [Layout](#Layout)
+  * [**Sobre o projeto**](#Sobre)
+  * [**Layout**](#Layout)
     * [Desktop](#Desktop)
     * [Mobile](#Mobile)
 
@@ -21,12 +21,16 @@
 
 ## Layout
   ### Desktop
-  <img align='center' width='500' src="images/web_home.jpg" alt="web page screenshot" />
-  <img align='center' width='500' src="images/web_release.jpg" alt="web page screenshot" />
+  <div align='center'>
+    <img align='center' width='500' src="images/web_home.jpg" alt="web page screenshot" />
+    <img align='center' width='500' src="images/web_release.jpg" alt="web page screenshot" />
+  </div>
 
   ### Mobile
-  <img align='center' width='200' src="images/mob_home.jpg" alt="" />
-  <img align='center' width='200' src="images/mob_artist.jpg" alt="" />
+  <div align='center'>
+    <img align='center' width='200' src="images/mob_home.jpg" alt="" />
+    <img align='center' width='200' src="images/mob_artist.jpg" alt="" />
+  </div>
 
 ## kajsdhfkjsdhf
   Music Bucket é um front end que consome a API do [MusicBraiz](https://musicbrainz.org/doc/MusicBrainz_API) para procurar e listar artistas e albums, mostrando informações sobre o ítem procurado, como data de lançamento e track list.
