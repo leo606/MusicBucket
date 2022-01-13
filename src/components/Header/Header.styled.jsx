@@ -15,7 +15,7 @@ const StyledHeader = styled.header`
   }
 
   h1 {
-    flex-grow: 3;
+    flex-grow: 1;
     text-align: center;
   }
 
