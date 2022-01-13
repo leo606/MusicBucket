@@ -14,6 +14,7 @@ const ArtistAlbumsListStyled = styled.section`
 
   ul {
     list-style: none;
+    margin-left: 2em;
   }
 
   li {
