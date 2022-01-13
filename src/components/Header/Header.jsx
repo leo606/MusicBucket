@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
@@ -17,10 +16,10 @@ export default function Header() {
   return (
     <StyledHeader>
       <div className="title">
-        <Link to='/'>
+        <Link to="/">
           <img src="images/mb_icon_opt.svg" alt="" />
         </Link>
-         <h1>Music Bucket</h1>
+        <h1><Link to="/">Music Bucket</Link></h1>
       </div>
       <div className="theme-toggle">
         <span>

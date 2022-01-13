@@ -19,6 +19,11 @@ const StyledHeader = styled.header`
     text-align: center;
   }
 
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
   img {
     max-height: 3em;
   }
