@@ -44,3 +44,22 @@
   - Pesquisar por releases
     - Mostrar releases encontradas
     - Listar músicas
+
+## Como rodar o projeto
+  Para rodar a aplicação localmente você vai precisar ter instalado em sua máquina [Git](https://git-scm.com) e [Node.js](https://nodejs.org). Opcionalmente um editor de texto para trabalhar com o código [VScode](https://code.visualstudio.com), [Atom](https://atom.io)
+
+  ### Executando
+
+  ```bash
+  # clonar o repositório
+  $ git clone git@github.com:leo606/MusicBucket.git
+
+  # ir para o diretório do projeto
+  $ cd MusicBucket
+
+  # instalar depedências
+  $ npm install
+
+  # iniciar servidor local
+  $ npm start
+  ```
