@@ -10,8 +10,10 @@
 
 
 ## Tabela de conteúdos
-  * [Sobre o projeto](#-Sobre)
-  * [kajsdhfkjsdhf](#-kajsdhfkjsdhf)
+  * [Sobre o projeto](#Sobre)
+  * [Layout](#Layout)
+    * [Desktop](#Desktop)
+    * [Mobile](#Mobile)
 
 ## Sobre
   Music Bucket é um front end que consome a API do [MusicBraiz](https://musicbrainz.org/doc/MusicBrainz_API) para procurar e listar artistas e albums, mostrando informações sobre o ítem procurado, como data de lançamento e track list.
