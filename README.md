@@ -23,6 +23,7 @@
   ### Desktop
   <div align='center'>
     <img align='center' width='500' src="images/web_home.jpg" alt="web page screenshot" />
+    <br/>
     <img align='center' width='500' src="images/web_release.jpg" alt="web page screenshot" />
   </div>
 
