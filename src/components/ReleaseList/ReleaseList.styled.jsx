@@ -17,7 +17,6 @@ const ReleaseListStyled = styled.section`
   }
 
   a {
-    text-decoration: none;
     color: inherit;
   }
 `;
